@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+<title id="title">Leśna ścieżka o zmierzchu</title>
+<desc id="desc">Spokojny, ciemny las iglasty otwiera się na ciepłe światło nad ścieżką.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#182c2a"/><stop offset=".55" stop-color="#53634c"/><stop offset="1" stop-color="#c0a779"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#f0d7a0" stop-opacity=".9"/><stop offset=".35" stop-color="#d7bd87" stop-opacity=".38"/><stop offset="1" stop-color="#d7bd87" stop-opacity="0"/></radialGradient>
+  <linearGradient id="path" x2="0" y2="1"><stop stop-color="#c2a77a" stop-opacity=".65"/><stop offset="1" stop-color="#302c23"/></linearGradient>
+  <linearGradient id="trunk" x2="1"><stop stop-color="#101c19"/><stop offset=".5" stop-color="#26382e"/><stop offset="1" stop-color="#101b18"/></linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="32"/></filter>
+  <g id="pine"><path d="M0 0L-105 190H-48L-142 350H-66L-170 520H170L66 350H142L48 190H105Z"/><path d="M-18 500H18V700H-18Z" fill="url(#trunk)"/></g>
+</defs>
+<rect width="1800" height="1100" fill="url(#sky)"/>
+<ellipse cx="930" cy="560" rx="520" ry="350" fill="url(#glow)" filter="url(#blur)"/>
+<path d="M0 670Q320 570 610 660T1200 635T1800 620V1100H0Z" fill="#283b30"/>
+<path d="M0 790Q400 670 720 770T1400 720T1800 760V1100H0Z" fill="#1a2b23"/>
+<path d="M780 1100Q865 870 870 735Q900 680 930 735Q955 900 1110 1100Z" fill="url(#path)" opacity=".85"/>
+<path d="M0 0H1800V270Q1510 220 1300 310T850 280T0 340Z" fill="#132421" opacity=".45"/>
+<g fill="#172820"><use href="#pine" transform="translate(80 120) scale(1.25)"/><use href="#pine" transform="translate(300 30) scale(1.05)"/><use href="#pine" transform="translate(520 180) scale(.8)"/><use href="#pine" transform="translate(1690 40) scale(1.45)"/><use href="#pine" transform="translate(1460 130) scale(1.05)"/><use href="#pine" transform="translate(1260 250) scale(.75)"/></g>
+<g fill="#0f1c18"><use href="#pine" transform="translate(-30 340) scale(1.35)"/><use href="#pine" transform="translate(240 380) scale(.95)"/><use href="#pine" transform="translate(1760 320) scale(1.35)"/><use href="#pine" transform="translate(1510 390) scale(.95)"/></g>
+<g fill="#a5a477" opacity=".45"><circle cx="680" cy="690" r="4"/><circle cx="1120" cy="655" r="3"/><circle cx="1010" cy="730" r="3"/><circle cx="760" cy="755" r="2"/><circle cx="1180" cy="770" r="3"/></g>
+<path d="M0 1000Q300 920 570 1000T1150 990T1800 950V1100H0Z" fill="#101b18" opacity=".75"/>
+</svg>
