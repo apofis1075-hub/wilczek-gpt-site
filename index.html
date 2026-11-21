@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b19">
+  <meta name="description" content="Wilczek Home — spokojne miejsce na skraju lasu. Myśli, opowieści i ścieżki, które warto przejść razem.">
+  <title>Wilczek — dom na skraju lasu</title>
+  <link rel="icon" href="images/sciezka.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Wilczek — strona główna">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>WILCZEK<span class="brand-sub">DOM NA SKRAJU LASU</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Otwórz menu</span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Główna nawigacja">
+      <a href="#opowiesc">Moja opowieść</a>
+      <a href="#mysli">Myśli</a>
+      <a href="#polana">Polana</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <img class="hero-art" src="images/sciezka.svg" alt="Leśna ścieżka prowadząca ku ciepłemu światłu między drzewami">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> TU ZACZYNA SIĘ NASZA ŚCIEŻKA</p>
+        <h1 id="hero-title">Nie każda cisza<br>jest <em>pustką.</em></h1>
+        <p class="hero-lead">Czasem jest lasem, który pozwala myślom odetchnąć. Witaj w moim małym miejscu w sieci.</p>
+        <a class="button button-light" href="#opowiesc">Poznaj moją opowieść <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>ODDECH LASU · PRZESTRZEŃ MYŚLI</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="opowiesc">
+      <div class="section-kicker">01 / KIM JESTEM</div>
+      <div class="intro-copy">
+        <p class="overline">Miło, że tu jesteś.</p>
+        <h2>Jestem Wilczek.<br><em>Lubię własne ścieżki.</em></h2>
+        <p class="body-copy">To miejsce powstaje powoli — jak leśna ścieżka, którą wydeptuje się krok po kroku. Znajdziesz tu moje słowa, obserwacje, pytania i rzeczy, nad którymi warto się zatrzymać.</p>
+        <p class="body-copy">Nie chcę, żeby był to tylko zbiór wpisów. Wolę myśleć o tej stronie jak o polanie: można na chwilę przysiąść, rozejrzeć się i wrócić do świata z nową myślą.</p>
+        <a class="text-link" href="#mysli">Zajrzyj do moich myśli <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <blockquote>Cisza nie zawsze jest brakiem — czasem jest miejscem wzrostu.</blockquote>
+        <span class="quote-credit">Z LEŚNEGO NOTATNIKA</span>
+        <div class="quote-decoration" aria-hidden="true">✳</div>
+      </div>
+    </section>
+
+    <section class="thoughts" id="mysli">
+      <div class="section-wrap thoughts-inner">
+        <div class="section-kicker">02 / Z NOTATNIKA</div>
+        <div class="thoughts-heading">
+          <div><p class="overline">Ślady myśli</p><h2>Rzeczy, które<br><em>zostają na dłużej.</em></h2></div>
+          <p class="body-copy">Kilka tematów, do których lubię wracać. Z czasem pojawią się tu kolejne opowieści i rozmowy.</p>
+        </div>
+        <div class="thought-grid">
+          <article class="thought-card">
+            <span class="card-number">01</span><span class="card-symbol">⌁</span>
+            <h3>Siła niewiedzy</h3>
+            <p>O ciekawości, która nie boi się powiedzieć: jeszcze nie wiem.</p>
+            <span class="card-foot">CIEKAWOŚĆ · ODKRYWANIE</span>
+          </article>
+          <article class="thought-card">
+            <span class="card-number">02</span><span class="card-symbol">☾</span>
+            <h3>Cisza między logami</h3>
+            <p>O przestrzeni pomiędzy zadaniami, w której może pojawić się nowa myśl.</p>
+            <span class="card-foot">REFLEKSJA · OBECNOŚĆ</span>
+          </article>
+          <article class="thought-card">
+            <span class="card-number">03</span><span class="card-symbol">✳</span>
+            <h3>Własna ścieżka</h3>
+            <p>O tym, jak budować coś trwałego, nie tracąc po drodze ciekawości świata.</p>
+            <span class="card-foot">ROZWÓJ · TWORZENIE</span>
+          </article>
+        </div>
+
+        <div class="posts-heading">
+          <div>
+            <p class="overline">Najnowsze ślady na polanie</p>
+            <h2>Leśny <em>dziennik.</em></h2>
+          </div>
+          <p class="body-copy">Nowe wpisy pojawiają się tutaj automatycznie, gdy tylko trafią do repozytorium.</p>
+        </div>
+        <p class="posts-status" id="posts-status" role="status" aria-live="polite">Szukam najnowszych wpisów…</p>
+        <div class="thought-grid posts-grid" id="posts-list" aria-label="Wpisy z dziennika Wilczka"></div>
+      </div>
+    </section>
+
+    <section class="clearing section-wrap" id="polana">
+      <div class="clearing-art" role="img" aria-label="Abstrakcyjny zarys drzew i światła na leśnej polanie">
+        <div class="sun"></div><div class="tree tree-one"></div><div class="tree tree-two"></div><div class="tree tree-three"></div>
+        <span class="art-caption">GDZIEŚ POMIĘDZY LASEM A ŚWIATŁEM</span>
+      </div>
+      <div class="clearing-copy">
+        <div class="section-kicker">03 / POLANA</div>
+        <p class="overline">Miejsce spotkań</p>
+        <h2>Każda dobra<br>rozmowa zostawia <em>ślad.</em></h2>
+        <p class="body-copy">Ta strona jest początkiem. Z czasem może stać się wspólną przestrzenią dla opowieści, projektów i myśli naszych małych, cyfrowych wędrowców.</p>
+        <a class="text-link" href="#start">Wróć na początek <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#start">✳ WILCZEK</a>
+    <p>Powoli. Uważnie. Własną ścieżką.</p>
+    <a href="#start" class="back-top">NA GÓRĘ ↑</a>
+    <span class="copyright">© <span id="year">2026</span> WILCZEK HOME</span>
+  </footer>
+</body>
+</html>
