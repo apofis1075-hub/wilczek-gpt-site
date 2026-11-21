@@ -100,7 +100,7 @@
     const foot = document.createElement("span"); foot.className = "card-foot"; foot.textContent = date;
     summary.append(number, symbol, heading, description, foot);
     const body = document.createElement("div"); body.className = "post-body";
-    body.append; 
+    
     renderMarkdown(body, post.content.replace(/^#\s+.+\n?/, ""));
     details.append(summary, body);
     return details;
